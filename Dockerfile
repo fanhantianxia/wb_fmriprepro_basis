@@ -197,6 +197,7 @@ RUN ldconfig
 WORKDIR /tmp/
 #ENTRYPOINT ["/usr/local/miniconda/bin/fmriprep"] #
 
+:<<!
 ARG BUILD_DATE
 ARG VCS_REF
 ARG VERSION
@@ -208,3 +209,4 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.vcs-url="https://github.com/poldracklab/fmriprep" \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
+!
